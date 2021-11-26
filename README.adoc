@@ -1,0 +1,52 @@
+= Hands-on TDD with JavaScript
+:toc: left
+:source-highlighter: pygments
+:pygments-css: class
+:icons: font
+:uri_repo_gitlab: https://gitlab.com/fernandobasso/hands-on-tdd-with-javascript
+:uri_repo_github: https://github.com/FernandoBasso/Hands-On-TDD-with-JavaScript
+
+A hands-on series on practical Test Driven Development examples, concepts and motivation.
+
+[NOTE]
+====
+The link:{uri_repo_gitlab}[main repo is the one on Gitlab].
+The link:{uri_repo_github}[Github repo] is only a mirror.
+Discussion, issues, etc. should be happen on link:{uri_repo_gitlab}[Gitlab].
+====
+
+[NOTE]
+====
+Github doesn't do nice rendering of Asciidoctor (`.adoc`) files.
+Gitlab does a much better job at this.
+You are advised to read this text on link:{uri_repo_gitlab}[Gitlab].
+====
+
+== Previewing Asciidoctor Locally
+
+You'll need to have Ruby for this.
+Install Ruby with link:https://rvm.io[rvm], then run these two commands (only once):
+
+[source,shell-session]
+----
+$ gem install bundler
+$ gem install
+----
+
+To preview the generated HTML file from the `.adoc` file, convert the file:
+
+[source,shell-session]
+----
+$ asciidoctor README.adoc
+----
+
+Then open README.html in the web browser.
+
+It is also possible to watch for `.adoc` file changes and convert when the file is saved.
+
+[source,shell-session]
+----
+$ bundle exec guard
+----
+
+Reload the browser to see the updated content.
